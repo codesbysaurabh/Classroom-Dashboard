@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h2>Feedback Form</h2>
+    <p> submit your feedback or suggestions</p>
+    <hr>
+    <form method="post">
+        <h3>Personal Information</h3>
+            <hr>
+            <br>
+            <div>
+                <label for="fname">Full Name* : </label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your name" required>
+            </div>
+            <br>
+            <div>
+                <label for="rollno">Roll No. :</label>
+                <input type="text" id="rollno" name="rollno" placeholder="Enter your roll number">
+            </div>
+            <br>
+            <div>
+                <label>Email* :</label>
+                <input type="email" placeholder="strange1234@gmail.com" required>
+            </div>
+            <br>
+            <div>
+                <label>Phone No. :</label>
+                <input type="text" placeholder="Enter your phone no.">
+            </div>
+            <br>
+            <hr>
+        <h3>Academic Details</h3>
+            <hr>
+            <br>
+            <div>
+                <label for="semester">Semester : </label>
+                <select id="semester" name="semester">
+                    <option>I</option>
+                    <option>II</option>
+                    <option>III</option>
+                    <option>IV</option>
+                    <option>V</option>
+                    <option>VI</option>
+                    <option>VII</option>
+                    <option>VIII</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="section">Section :</label>
+                <input type="text" id="section" maxlength="3">
+            </div>
+            <br>
+            <hr>
+        <h3>Feedback Type</h3>
+            <hr>
+            <div>
+                <label for="feedback_type">
+                <input type="radio" id="feedback_type" name="feedback_type" value="website_issue">
+                Website Issue
+                </label>
+                <label for="feedback_type">
+                <input type="radio" id="feedback_type" name="feedback_type" value="Resources request">
+                Resources Request
+                </label>
+                <label for="feedback_type">
+                <input type="radio" id="feedback_type" name="feedback_type" value="Suggestions">
+                Suggestions
+                </label>
+                <label for="feedback_type">
+                <input type="radio" id="feedback_type" name="feedback_type" value="General_Feedback">
+                General feedback
+                </label>
+                <label for="feedback_type">
+                <input type="radio" id="feedback_type" name="feedback_type" value="Other">
+                Other
+                </label>   
+            </div>
+        <h3>Message</h3>
+            <hr>
+            <div>
+                <!-- <label for="message">12</label> -->
+                <textarea id="message" name="message" rows="5" maxlength="500" placeholder="enter your feedback"></textarea>
+            </div>
+            <br>
+        <br>
+        <span>
+            <input type="reset">
+        </span>
+        <span>
+            <input type="submit">
+        </span>
+    </form>
+</body>
+</html>
