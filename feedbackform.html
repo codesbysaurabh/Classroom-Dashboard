@@ -4,41 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>Feedback Form</h2>
-    <p> submit your feedback or suggestions</p>
-    <hr>
-    <form method="post">
-        <h3>Personal Information</h3>
-            <hr>
-            <br>
-            <div>
-                <label for="fname">Full Name* : </label>
+
+<header class="title">
+    <img src="https://img.freepik.com/premium-vector/classroom-icon-simple-thin-outline_1223784-18515.jpg?w=1480" width="50" alt="Dashboard Icon">
+    <h2>Class Dashboard</h2>
+</header>
+
+<nav>
+    <ul class="navbar">
+        <li class="navbuttons"><a href="index.html">Home</a></li>
+        <li class="navbuttons"><a href="timetable.html">Time Table</a></li>
+        <li class="navbuttons"><a href="resources.html">Resources</a></li>
+        <li class="navbuttons"><a href="feedbackform.html">Feedback</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2 class="page-title">Feedback Form</h2>
+    <p class="form-subtitle">Submit your feedback or suggestions</p>
+
+    <div class="form-container">
+        <form method="post">
+
+            <!-- Personal Info -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fname">Full Name *</label>
                 <input type="text" id="fname" name="fname" placeholder="Enter your name" required>
-            </div>
-            <br>
-            <div>
-                <label for="rollno">Roll No. :</label>
+
+                <label for="rollno">Roll No.</label>
                 <input type="text" id="rollno" name="rollno" placeholder="Enter your roll number">
-            </div>
-            <br>
-            <div>
-                <label>Email* :</label>
-                <input type="email" placeholder="strange1234@gmail.com" required>
-            </div>
-            <br>
-            <div>
-                <label>Phone No. :</label>
-                <input type="text" placeholder="Enter your phone no.">
-            </div>
-            <br>
-            <hr>
-        <h3>Academic Details</h3>
-            <hr>
-            <br>
-            <div>
-                <label for="semester">Semester : </label>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+                <label for="phone">Phone No.</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            </fieldset>
+
+            <!-- Academic -->
+            <fieldset>
+                <legend>Academic Details</legend>
+
+                <label for="semester">Semester</label>
                 <select id="semester" name="semester">
                     <option>I</option>
                     <option>II</option>
@@ -49,52 +61,47 @@
                     <option>VII</option>
                     <option>VIII</option>
                 </select>
+
+                <label for="section">Section</label>
+                <input type="text" id="section" name="section" maxlength="3">
+            </fieldset>
+
+            <!-- Feedback Type -->
+            <fieldset>
+                <legend>Feedback Type</legend>
+
+                <div class="radio-group">
+                    <label><input type="radio" name="feedback_type" value="website_issue"> Website Issue</label>
+                    <label><input type="radio" name="feedback_type" value="resources_request"> Resources Request</label>
+                    <label><input type="radio" name="feedback_type" value="suggestions"> Suggestions</label>
+                    <label><input type="radio" name="feedback_type" value="general"> General Feedback</label>
+                    <label><input type="radio" name="feedback_type" value="other"> Other</label>
+                </div>
+            </fieldset>
+
+            <!-- Message -->
+            <fieldset>
+                <legend>Message</legend>
+                <textarea id="message" name="message" rows="5" maxlength="500" placeholder="Enter your feedback"></textarea>
+            </fieldset>
+
+            <div class="form-buttons">
+                <input type="reset" class="btn secondary">
+                <input type="submit" class="btn primary">
             </div>
-            <br>
-            <div>
-                <label for="section">Section :</label>
-                <input type="text" id="section" maxlength="3">
-            </div>
-            <br>
-            <hr>
-        <h3>Feedback Type</h3>
-            <hr>
-            <div>
-                <label for="feedback_type">
-                <input type="radio" id="feedback_type" name="feedback_type" value="website_issue">
-                Website Issue
-                </label>
-                <label for="feedback_type">
-                <input type="radio" id="feedback_type" name="feedback_type" value="Resources request">
-                Resources Request
-                </label>
-                <label for="feedback_type">
-                <input type="radio" id="feedback_type" name="feedback_type" value="Suggestions">
-                Suggestions
-                </label>
-                <label for="feedback_type">
-                <input type="radio" id="feedback_type" name="feedback_type" value="General_Feedback">
-                General feedback
-                </label>
-                <label for="feedback_type">
-                <input type="radio" id="feedback_type" name="feedback_type" value="Other">
-                Other
-                </label>   
-            </div>
-        <h3>Message</h3>
-            <hr>
-            <div>
-                <!-- <label for="message">12</label> -->
-                <textarea id="message" name="message" rows="5" maxlength="500" placeholder="enter your feedback"></textarea>
-            </div>
-            <br>
-        <br>
-        <span>
-            <input type="reset">
-        </span>
-        <span>
-            <input type="submit">
-        </span>
-    </form>
+
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; <time datetime="2026">2026</time> Class Dashboard</p>
+    <address>
+        Contact:
+        <a href="mailto:saurabhsingh4510@gmail.com">saurabh4510@gmail.com</a>
+    </address>
+</footer>
+
 </body>
 </html>
+

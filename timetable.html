@@ -3,93 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-*{
-text-align: center;
-}
-table,tr,th,td{
-border:1px solid black;
-}
-</style>
-
-<title >Time Table</title>
+<link rel="stylesheet" href="styles.css">
+<title>Time Table</title>
 </head>
 
 <body>
 
-<h3>BTech First Year Even Semester 2025-26 G1M </h3>
+<header class="title">
+    <img src="https://img.freepik.com/premium-vector/classroom-icon-simple-thin-outline_1223784-18515.jpg?w=1480" width="50" alt="Dashboard Icon">
+    <h2>Class Dashboard</h2>
+</header>
 
-<h1 >Time Table</h1>
+<nav>
+    <ul class="navbar">
+        <li class="navbuttons"><a href="index.html">Home</a></li>
+        <li class="navbuttons"><a href="timetable.html">Time Table</a></li>
+        <li class="navbuttons"><a href="resources.html">Resources</a></li>
+        <li class="navbuttons"><a href="feedbackform.html">Feedback</a></li>
+    </ul>
+</nav>
 
-<table>
+<main>
+    <h1 class="page-title">Time Table</h1>
 
-<tr>
-<th>Day / Time</th>
-<th>I<br>09:00-10:10</th>
-<th>II<br>10:10-11:20</th>
-<th>III<br>11:20-12:30</th>
-<th rowspan="7">Lunch Break<br>12:30-01:30</th>
-<th>IV<br>01:30-02:30</th>
-<th>V<br>02:30-03:30</th>
-<th>VI<br>03:30-04:30</th>
-</tr>
+    <div class="table-container">
+        <table class="timetable">
+            <tr>
+                <th>Day / Time</th>
+                <th>I<br>09:00-10:10</th>
+                <th>II<br>10:10-11:20</th>
+                <th>III<br>11:20-12:30</th>
+                <th rowspan="7" class="lunch">Lunch Break<br>12:30-01:30</th>
+                <th>IV<br>01:30-02:30</th>
+                <th>V<br>02:30-03:30</th>
+                <th>VI<br>03:30-04:30</th>
+            </tr>
 
-<tr>
-<th>Monday</th>
-<td>Maths</td>
-<td>EC / ME </td>
-<td>SS</td>
-<td>ME</td>
-<td>Chem</td>
-<td>EC</td>
-</tr>
+            <tr>
+                <th>Monday</th>
+                <td>Maths</td>
+                <td>EC / ME</td>
+                <td>SS</td>
+                <td>ME</td>
+                <td>Chem</td>
+                <td>EC</td>
+            </tr>
 
-<tr>
-<th>Tuesday</th>
-<td>Maths</td>
-<td>ME</td>
-<td>EC</td>
-<td>SS</td>
-<td>Maths</td>
-<td>ME</td>
-</tr>
+            <tr>
+                <th>Tuesday</th>
+                <td>Maths</td>
+                <td>ME</td>
+                <td>EC</td>
+                <td>SS</td>
+                <td>Maths</td>
+                <td>ME</td>
+            </tr>
 
-<tr>
-<th>Wednesday</th>
-<td colspan="3">EC Lab </td>
-<td>Maths</td>
-<td>ME / EC </td>
-<td>SS</td>
-</tr>
+            <tr>
+                <th>Wednesday</th>
+                <td colspan="3">EC Lab</td>
+                <td>Maths</td>
+                <td>ME / EC</td>
+                <td>SS</td>
+            </tr>
 
-<tr>
-<th>Thursday</th>
-<td>Chem</td>
-<td>Maths</td>
-<td>EC</td>
-<td>ME</td>
-<td>Chem</td>
-<td>W/S</td>
-</tr>
+            <tr>
+                <th>Thursday</th>
+                <td>Chem</td>
+                <td>Maths</td>
+                <td>EC</td>
+                <td>ME</td>
+                <td>Chem</td>
+                <td>W/S</td>
+            </tr>
 
-<tr>
-<th>Friday</th>
-<td>EC</td>
-<td>Maths / Chem </td>
-<td>Chem</td>
-<td colspan="3">W/S Lab </td>
-</tr>
+            <tr>
+                <th>Friday</th>
+                <td>EC</td>
+                <td>Maths / Chem</td>
+                <td>Chem</td>
+                <td colspan="3">W/S Lab</td>
+            </tr>
 
-<tr>
-<th>Saturday</th>
-<td>ME</td>
-<td>EC</td>
-<td>Chem / Maths </td>
-<td colspan="3">SS Lab </td>
-</tr>
+            <tr>
+                <th>Saturday</th>
+                <td>ME</td>
+                <td>EC</td>
+                <td>Chem / Maths</td>
+                <td colspan="3">SS Lab</td>
+            </tr>
+        </table>
+    </div>
+</main>
 
-</table>
+<footer>
+    <p>&copy; <time datetime="2026">2026</time> Class Dashboard</p>
+    <address>
+        Contact:
+        <a href="mailto:saurabhsingh4510@gmail.com">saurabhsingh4510@gmail.com</a>
+    </address>
+</footer>
 
 </body>
 </html>

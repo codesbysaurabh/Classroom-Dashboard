@@ -1,0 +1,366 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page layout */
+html, body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main should push footer down */
+main{
+    flex: 1;
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;   /* vertical alignment */
+    gap: 20px;             /* space between image and text */
+    flex-wrap: wrap;
+}
+
+.title img{
+    border-radius: 10px;
+}
+
+/* Navigation bar */
+.navbar{
+    background-color: #9A094A;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.navbuttons{
+    list-style: none;
+}
+
+.navbuttons a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: 0.2s ease;     /* smooth hover */
+}
+
+/* Hover effect */
+.navbuttons a:hover{
+    background-color: #F990BF;
+    color: black;
+}
+
+/* Fix header at top */
+.title{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Fix navbar below header */
+.navbar{
+    position: fixed;
+    top: 70px;   /* height of header */
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Push page content down */
+main{
+    margin-top: 130px;   /* header + navbar height */
+}
+
+
+/* HOME PAGE  */
+
+.welcome {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.overview {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.card {
+    background: #FBBCD8;
+    padding: 15px;
+    flex: 1;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-area {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.announcements {
+    flex: 3;
+}
+
+.announcements article {
+    background: #FBBCD8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.sidebar {
+    flex: 1;
+    background: #FBBCD8;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+
+footer{
+    background-color: #430421;
+    color: aliceblue;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+footer a{
+    color:#FBBCD8;
+}
+
+/* TIME TABLE */
+
+/* Page title */
+.page-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table container for centering */
+.table-container{
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+/* Timetable styling */
+.timetable{
+    border-collapse: collapse;
+    min-width: 900px;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Cells */
+.timetable th,
+.timetable td{
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Header row */
+.timetable th{
+    background-color: #9A094A;
+    color: white;
+}
+
+/* Day column */
+.timetable th:first-child{
+    background-color: #F990BF;
+    color: black;
+}
+
+/* Lunch column */
+.lunch{
+    background-color: #FBBCD8;
+    font-weight: bold;
+}
+
+/* Row hover */
+.timetable tr:hover td{
+    background-color: #f9f2f6;
+}
+/* FORM PAGE */
+/* Form title */
+.page-title{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.form-subtitle{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Form container */
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+    max-width: 600px;
+    background: #FBBCD8;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Fieldsets */
+fieldset{
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+form label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input,
+form select,
+form textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Radio buttons */
+.radio-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Buttons */
+.form-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.primary{
+    background-color: #9A094A;
+    color: white;
+}
+
+.primary:hover{
+    background-color: #7a073a;
+}
+
+.secondary{
+    background-color: #ccc;
+}
+
+.secondary:hover{
+    background-color: #aaa;
+}
+
+/* RESOURCES PAGE */
+.page-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Subject section */
+.subject{
+    margin-bottom: 40px;
+}
+
+.subject h2{
+    margin-bottom: 15px;
+}
+
+/* Units grid */
+.units{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Unit card */
+.unit-card{
+    background: #FBBCD8;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Download button */
+.download-btn{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 6px 15px;
+    background-color: #9A094A;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.download-btn:hover{
+    background-color: #7a073a;
+}
+
+/* Video */
+.unit-card iframe{
+    width: 100%;
+    height: 170px;
+    border: none;
+    border-radius: 6px;
+}
+
+.radio-group label{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+/* Keep radio inline */
+.radio-group input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+
