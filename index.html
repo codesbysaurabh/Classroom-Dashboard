@@ -16,7 +16,6 @@
     <meta property="og:title" content="Class Dashboard | Student Portal">
     <meta property="og:description" content="Access timetable, study materials, announcements and academic updates for Semester 2.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com/index.html">
     <meta property="og:image" content="https://img.freepik.com/premium-vector/classroom-icon-simple-thin-outline_1223784-18515.jpg">
     <meta property="og:site_name" content="Class Dashboard">
 
@@ -35,7 +34,7 @@
 
 <nav>
     <ul class="navbar">
-        <li class="navbuttons"><a href="index.html">Home</a></li>
+        <li class="navbuttons"><a href="index.html" class="active">Home</a></li>
         <li class="navbuttons"><a href="timetable.html">Time Table</a></li>
         <li class="navbuttons"><a href="resources.html">Resources</a></li>
         <li class="navbuttons"><a href="feedbackform.html">Feedback</a></li>
@@ -43,15 +42,35 @@
 </nav>
 
 <main>
-
-    <section class="welcome">
-        <div>
-            <h2>Welcome</h2>
-            <p>
-                This dashboard helps students access timetable, study resources,
-                and important announcements.
-            </p>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Class Dashboard</h1>
+            <p>Your centralized portal for timetable, resources and updates.</p>
         </div>
+    </section>
+
+    <section class="stats-section">
+
+        <div class="stat-card">
+            <h2>5</h2>
+            <p>Total Subjects</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>70</h2>
+            <p>Total Students</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>4</h2>
+            <p>Total Labs</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>3</h2>
+            <p>Assignments Given</p>
+        </div>
+
     </section>
 
     <section class="overview">
@@ -102,11 +121,33 @@
 </main>
 
 <footer class="footer">
-    <p>&copy; <time datetime="2026">2026</time> Class Dashboard</p>
-    <address>
-        Contact:
-        <a href="mailto:saurabhsingh4510@gmail.com">saurabhsingh4510@gmail.com</a>
-    </address>
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>Class Dashboard</h3>
+            <p>Your centralized portal for timetable, study resources and updates.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="timetable.html">Time Table</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="feedbackform.html">Feedback</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Email: saurabhsingh4510@gmail.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Class Dashboard. All rights reserved.</p>
+    </div>
 </footer>
 
 </body>
